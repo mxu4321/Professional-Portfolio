@@ -5,14 +5,18 @@
     --aqua: #93b3b0;
     --loden: #768f8f;
     --grey: #595562;
-    --white: #fff;
-    --text-shadow: 2px 2px var(--grey);
-    --hover-ts: 1px 1px 2px var(--reseda), 0 0 1em var(--loden), 0 0 0.2em var(--aqua);
+    --white:  #f9efef;
+    --hover-ts: 1px 1px 2px var(--reseda), 
+                0 0 1em var(--loden), 
+                0 0 0.2em var(--aqua);
+    --animation: 12s myGradient infinite;
+    --border-radius: 15px ;
 }
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    color: var(--white);
+    text-shadow: 2px 2px var(--grey);
 }
 
 a {
@@ -25,51 +29,77 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.my_name {
-    position: relative;
-    text-align: right;
-    margin-left: 60%;
-    color: var(--white);
-    font-size: larger;
-}
-
 
   /* ====nav bar style===== */
 .nav {
     border-radius: 30px 30px 0px 0px;
-    text-shadow: var(--text-shadow);
     display: flex;
 }
   li a {
     font-size: 24px;
     letter-spacing: 1px;
-    color: var(--white);
     margin-left: 30px;
 }
 
 
-/* =====main section===== */
+/* =====self-intro section===== */
 
 #intro_background {
     width: 100%;
     height: 50vh;
 }
 
-#avatar_pic {
-    height: 130px;
-    width: 150px;
-}
-
 .avatar {
-    position: relative;
-    left: 900px;
-    top: -350px;
+    height: 20%;
+    width: 12%;
+    left: 66%;
+    top: 16%;
+    border-radius: var(--border-radius);
 }
 
-/* =====projects layout===== */
+#avatar_pic {
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    border-radius: var(--border-radius); 
+}
+
+.my_name {
+    left: 50%;
+    top: 25%;
+    font-size: 150%;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--grey); 
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    left: 52%;
+    top:21%;
+  }
+
+.self-intro {
+    left: 48%;
+    top: 36.5%;
+    font-size: 150%;
+    font-weight: bolder;
+    font-family: revert;
+    line-height: 150%;
+}
+
+.avatar, .my_name, .self-intro, 
+.project_dscrb, .tooltiptext {
+    position: absolute;
+}
+
+/* =====project box layout===== */
 .projects {
     display: grid;
-    grid-template-columns: 15% 20%;
+    grid-template-columns: 18% 25%;
     grid-template-rows: 40% 35%;
     padding-top: 5%;
 }
@@ -77,30 +107,33 @@ a {
 #project_bgpic {
     width: 100%;
     height: 100%;
+    border-radius: var(--border-radius);
 }
 
 .projects .project_name {
-    color: var(--white);
     position: relative;
-    top: -25px;
-    left: 5px;
-    text-shadow: var(--text-shadow);
+    top: -30%;
+    left: 1%;
     display: inline;
-}
-
-.project_name {
-    font-size: 20px;
+    font-size: larger;
 }
 
 .project_container {
     margin-left: 50px;
     margin-top: 15%;
-    border: 5px solid;
-    /* border-radius: 30px; */
-    border-image: linear-gradient(-45deg, var(--white),var(--pink), var(--tan)) 1;
-    animation: 12s myGradient infinite;
+    padding: 2.5%;
+    border-radius: var(--border-radius);
 }
 
+/* =====project description===== */
+
+.project_dscrb {
+    display: inline;
+    left: 50%;
+    top: 70%;
+    line-height: 300%;
+    font-size: x-large;
+}
 
 
 /* =====footer style===== */
@@ -110,47 +143,55 @@ a {
     letter-spacing: 2px;
     display: flex;
     justify-content: center;
-    text-shadow: var(--text-shadow);
 }
 
 .footer .contact {
     text-align: center;
 }
 
-footer a {
-    color: var(--white);
+/* =====pseudo classes===== */
+
+.my_name:hover::after {
+    cursor: cell;
+    content: "Hello!😊";
+    width: 120px;
+    background-color: var(--grey);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    left: 13%;
+    top: -163%
 }
 
-/* =====hover effect===== */
 .project_container:hover {
     box-shadow: inset 0px 0px 8px var(--loden),
     0 0 15px var(--aqua);
 }
 
-.project_name:hover {
+.project_name:hover, .my_name:hover,
+.email:hover, .github:hover, .linkedin:hover,
+#aboutme:hover, #portfolio:hover, #contactme:hover {
     text-shadow:  var(--hover-ts);
 }
 
-.email:hover, .github:hover, .linkedin:hover,
-#aboutme:hover, #portfolio:hover, #contactme:hover
-{
-    text-shadow: var(--hover-ts);
-}
-
-
-
 /* =====animation===== */
-.header .nav, .about, .projects, .footer {
+.header .nav, .projects, .footer {
     list-style-type: none;
     padding: 18px 0;
     background-size: 200% 200%;
     background-image: linear-gradient(
         -45deg, 
         var(--reseda), var(--aqua), var(--grey), var(--loden),var(--tan));
-    animation: 12s myGradient infinite;
+    animation: var(--animation);
     box-shadow: 3px 3px 20px var(--grey);
   }
-
+.project_container, .avatar {
+    background-image: linear-gradient(-45deg, var(--white),var(--pink), var(--tan), var(--reseda));
+    animation: var(--animation);
+    box-shadow: 3px 3px 20px var(--grey);
+    background-size: 200% 200%;
+}
 
 @keyframes myGradient {
     0% {
@@ -168,14 +209,46 @@ footer a {
 
 /* =====Media Queries===== */
 
-@media (max-width: 769px) {
-    /* .main {
-		display: flex;
-        flex-direction: column;
-		align-items: center;
-	} */
+@media (max-width: 992px) {
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+    .avatar {
+        display: none;
+    }
+    .my_name, .self-intro {
+        display: inline-flex;
+        position: absolute;
+        left: 15%;
+    }
+    .projects {
+        display: grid;
+        grid-template-columns: 50% 1fr;
+    }
+    .project_dscrb {
+        display: none;
+    }
 }
 
-@media (min-width: 1025px) {
-
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+    .avatar {
+        display: none;
+    }
+    .my_name, .self-intro {
+        display: inline-flex;
+        position: absolute;
+        left: 15%;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project_dscrb {
+        display: none;
+    }
 }

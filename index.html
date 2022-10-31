@@ -16,69 +16,90 @@
         <nav>
             <ul class="nav">
                 <li id="aboutme">
-                    <a href="#">About</a>
+                    <a href="#part1">About</a>
                 </li>
                 <li id="portfolio">
-                    <a href="#portfolio">Projects</a>
+                    <a href="#part2">Projects</a>
                 </li>
                 <li id="contactme">
-                    <a href="#contactme">Contact</a>
+                    <a href="#part3">Contact</a>
                 </li>
-                <h1 class="my_name">Mengxue Xu</h1>
             </ul>
         </nav>
     </header>
 
-    <!-- self-intro & projects -->
+    <!-- introduction & projects -->
     <main class="main">
-        <section class="about">
+        <section class="about" id="part1">
             <div>
                 <img id="intro_background" src="./assets/images/background2.png" alt="pink_background">
                 <div class="avatar">
                     <img id="avatar_pic" src="./assets/images/avatar.jpg" alt="avatar">
                 </div>
             </div>
+            <div>
+                <h1 class="my_name">Mengxue Xu</h1>
+                <pre class="self-intro">I am attending a coding bootcamp, 
+I aim to become a web developer. </pre>
+            </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="part2">
             <div class="project_container">
-                <a id="portfolio" href="https://mxu4321.github.io/bootcamp-module1-challenge/">
+                <a href="https://mxu4321.github.io/bootcamp-module1-challenge/">
                 <img src="./assets/images/project1.png" alt="picture_with_text" id="project_bgpic">
                 <h3 class="project_name">Homework</h3>
                 </a>
             </div>
             <div class="project_container">
-                <a id="portfolio" href="https://mxu4321.github.io/counterapp/">
+                <a href="https://mxu4321.github.io/counterapp/">
                     <img src="./assets/images/project2.png" alt="picture_with_text" id="project_bgpic">
                     <h3 class="project_name">My First Project</h3>
                 </a>
             </div>
             <div class="project_container">
-                <a id="portfolio" href="https://mxu4321.github.io/module1_mini_project/">
+                <a href="https://mxu4321.github.io/module1_mini_project/">
                 <img src="./assets/images/project3.png" alt="picture_with_text" id="project_bgpic">
                 <h3 class="project_name">Group Project</h3>
                 </a>
             </div>
             <div class="project_container">
-                <a id="portfolio" href="https://mxu4321.github.io/module2_mini_project/">
+                <a href="https://mxu4321.github.io/module2_mini_project/">
                 <img src="./assets/images/project4.png" alt="picture_with_text" id="project_bgpic">
                 <h3 class="project_name">My Recent Project</h3>
                 </a>
             </div>
         </section>
+        <div class="project_dscrb">
+            <h2>Projects Introduction</h2>
+            <ul class="project_list">
+                <li class="list_item">
+                    ◽ My first project is a web page counter app
+                </li>
+                <li>
+                    ◽ My recent project is a cheatsheet for css snippet
+                </li>
+                <li>
+                    ◽ My homework is code refactor for a website
+                </li>
+                <li>
+                    ◽ My group project is a website with form
+                </li>
+            </ul>
+        </div>
     </main>
 
     <!-- contact information -->
     <footer class="footer">
-        <section class="contact">
+        <section class="contact" id="part3">
             <div class="email">
-                <a id="contactme" href="mailto:mxu4321@gmai.com">📧 Email Me 📧</a>
+                <a href="mailto:mxu4321@gmai.com">📧 Email Me 📧</a>
             </div>
             <div class="github">
-                <a id="contactme" href="https://github.com/mxu4321">💼 My Github 💼</a>
+                <a href="https://github.com/mxu4321">💼 My Github 💼</a>
             </div>
             <div class="linkedin">
-                <a id="contactme" href="https://www.linkedin.com/in/mengxuexu/">📄 My LinkedIn 📄</a>
+                <a href="https://www.linkedin.com/in/mengxuexu/">📄 My LinkedIn 📄</a>
             </div>    
         </section>
     </footer>
