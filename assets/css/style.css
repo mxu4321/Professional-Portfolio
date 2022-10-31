@@ -96,12 +96,11 @@ a {
     position: absolute;
 }
 
-/* =====project box layout===== */
+/* =====project boxes layout===== */
 .projects {
     display: grid;
-    grid-template-columns: 18% 25%;
-    grid-template-rows: 40% 35%;
-    padding-top: 5%;
+    grid-template-columns: 19% 29%;
+    grid-template-rows: 54% 37%;
 }
 
 #project_bgpic {
@@ -119,18 +118,20 @@ a {
 }
 
 .project_container {
-    margin-left: 50px;
-    margin-top: 15%;
+    margin-left: 10%;
+    margin-top: 7%;
     padding: 2.5%;
+    height: 75%;
     border-radius: var(--border-radius);
 }
+
 
 /* =====project description===== */
 
 .project_dscrb {
     display: inline;
-    left: 50%;
-    top: 70%;
+    left: 51%;
+    top: 73%;
     line-height: 300%;
     font-size: x-large;
 }
