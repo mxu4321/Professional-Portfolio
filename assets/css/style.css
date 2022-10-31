@@ -1,0 +1,181 @@
+:root {
+    --pink: #fde6e0;
+    --tan: #eba99d;
+    --reseda: #adbdbb;
+    --aqua: #93b3b0;
+    --loden: #768f8f;
+    --grey: #595562;
+    --white: #fff;
+    --text-shadow: 2px 2px var(--grey);
+    --hover-ts: 1px 1px 2px var(--reseda), 0 0 1em var(--loden), 0 0 0.2em var(--aqua);
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =====header content===== */
+.header {
+    line-height: 300%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.my_name {
+    position: relative;
+    text-align: right;
+    margin-left: 60%;
+    color: var(--white);
+    font-size: larger;
+}
+
+
+  /* ====nav bar style===== */
+.nav {
+    border-radius: 30px 30px 0px 0px;
+    text-shadow: var(--text-shadow);
+    display: flex;
+}
+  li a {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: var(--white);
+    margin-left: 30px;
+}
+
+
+/* =====main section===== */
+
+#intro_background {
+    width: 100%;
+    height: 50vh;
+}
+
+#avatar_pic {
+    height: 130px;
+    width: 150px;
+}
+
+.avatar {
+    position: relative;
+    left: 900px;
+    top: -350px;
+}
+
+/* =====projects layout===== */
+.projects {
+    display: grid;
+    grid-template-columns: 15% 20%;
+    grid-template-rows: 40% 35%;
+    padding-top: 5%;
+}
+
+#project_bgpic {
+    width: 100%;
+    height: 100%;
+}
+
+.projects .project_name {
+    color: var(--white);
+    position: relative;
+    top: -25px;
+    left: 5px;
+    text-shadow: var(--text-shadow);
+    display: inline;
+}
+
+.project_name {
+    font-size: 20px;
+}
+
+.project_container {
+    margin-left: 50px;
+    margin-top: 15%;
+    border: 5px solid;
+    /* border-radius: 30px; */
+    border-image: linear-gradient(-45deg, var(--white),var(--pink), var(--tan)) 1;
+    animation: 12s myGradient infinite;
+}
+
+
+
+/* =====footer style===== */
+.footer {
+    border-radius: 0px 0px 30px 30px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    text-shadow: var(--text-shadow);
+}
+
+.footer .contact {
+    text-align: center;
+}
+
+footer a {
+    color: var(--white);
+}
+
+/* =====hover effect===== */
+.project_container:hover {
+    box-shadow: inset 0px 0px 8px var(--loden),
+    0 0 15px var(--aqua);
+}
+
+.project_name:hover {
+    text-shadow:  var(--hover-ts);
+}
+
+.email:hover, .github:hover, .linkedin:hover,
+#aboutme:hover, #portfolio:hover, #contactme:hover
+{
+    text-shadow: var(--hover-ts);
+}
+
+
+
+/* =====animation===== */
+.header .nav, .about, .projects, .footer {
+    list-style-type: none;
+    padding: 18px 0;
+    background-size: 200% 200%;
+    background-image: linear-gradient(
+        -45deg, 
+        var(--reseda), var(--aqua), var(--grey), var(--loden),var(--tan));
+    animation: 12s myGradient infinite;
+    box-shadow: 3px 3px 20px var(--grey);
+  }
+
+
+@keyframes myGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    
+    50%{
+      background-position: 100% 50%;
+    }
+    
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+/* =====Media Queries===== */
+
+@media (max-width: 769px) {
+    /* .main {
+		display: flex;
+        flex-direction: column;
+		align-items: center;
+	} */
+}
+
+@media (min-width: 1025px) {
+
+}
