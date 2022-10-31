@@ -170,7 +170,7 @@ a {
 }
 
 .project_name:hover, .my_name:hover,
-.email:hover, .github:hover, .linkedin:hover,
+#email:hover, #github:hover, #linkedin:hover,
 #aboutme:hover, #portfolio:hover, #contactme:hover {
     text-shadow:  var(--hover-ts);
 }
