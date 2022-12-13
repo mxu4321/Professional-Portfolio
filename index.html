@@ -1,108 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css links -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Portfolio</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <!-- header, nav bar & name -->
     <header class="header">
-        <nav>
-            <ul class="nav">
-                <li>
-                    <a id="aboutme" href="#part1">About</a>
-                </li>
-                <li>
-                    <a id="portfolio" href="#part2">Projects</a>
-                </li>
-                <li>
-                    <a id="contactme" href="#part3">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="nav">
+          <li>
+            <a id="aboutme" href="#part1">About</a>
+          </li>
+          <li>
+            <a id="portfolio" href="#part2">Projects</a>
+          </li>
+          <li>
+            <a id="contactme" href="#part3">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- introduction & projects -->
     <main class="main">
-        <section class="about" id="part1">
-            <div>
-                <img id="intro_background" src="./assets/images/background2.png" alt="pink_background">
-                <div class="avatar">
-                    <img id="avatar_pic" src="./assets/images/avatar.jpg" alt="avatar">
-                </div>
-            </div>
-            <div>
-                <h1 class="my_name">Mengxue Xu</h1>
-                <pre class="self-intro">I am attending a coding bootcamp, 
-I aim to become a web developer. </pre>
-            </div>
-        </section>
-
-        <section class="projects" id="part2">
-            <div class="project_container" id="homework">
-                <a href="https://mxu4321.github.io/bootcamp-module1-challenge/">
-                <img src="./assets/images/project1.png" alt="picture_with_text" id="project_bgpic">
-                <h3 class="project_name">Homework</h3>
-                </a>
-            </div>
-            <div class="project_container" id="1st_prjct">
-                <a href="https://mxu4321.github.io/counterapp/">
-                    <img src="./assets/images/project2.png" alt="picture_with_text" id="project_bgpic">
-                    <h3 class="project_name">My First Project</h3>
-                </a>
-            </div>
-            <div class="project_container" id="grp_prjct">
-                <a href="https://mxu4321.github.io/module1_mini_project/">
-                <img src="./assets/images/project3.png" alt="picture_with_text" id="project_bgpic">
-                <h3 class="project_name">Group Project</h3>
-                </a>
-            </div>
-            <div class="project_container" id="rcnt_prjct">
-                <a href="https://mxu4321.github.io/module2_mini_project/">
-                <img src="./assets/images/project4.png" alt="picture_with_text" id="project_bgpic">
-                <h3 class="project_name">My Recent Project</h3>
-                </a>
-            </div>
-        </section>
-        <div class="project_dscrb">
-            <h2>Projects Introduction</h2>
-            <ul class="project_list">
-                <li class="list_item">
-                    ◽ My first project is a web page counter app
-                </li>
-                <li>
-                    ◽ My recent project is a cheatsheet for css snippet
-                </li>
-                <li>
-                    ◽ My homework is code refactor for a website
-                </li>
-                <li>
-                    ◽ My group project is a website with form
-                </li>
-            </ul>
+      <section class="about" id="part1">
+        <div>
+          <img
+            id="intro_background"
+            src="./assets/images/background2.png"
+            alt="pink_background"
+          />
+          <div class="avatar">
+            <img
+              id="avatar_pic"
+              src="./assets/images/avatar.jpg"
+              alt="avatar"
+            />
+          </div>
         </div>
+        <div>
+          <h1 class="my_name">Mengxue Xu</h1>
+          <pre class="self-intro">
+I am attending a coding bootcamp, 
+I aim to become a web developer. </pre
+          >
+        </div>
+      </section>
+
+      <section class="projects" id="part2">
+        <div class="project_container" id="homework">
+          <a href="https://mxu4321.github.io/bootcamp-module1-challenge/">
+            <img
+              src="./assets/images/project1.png"
+              alt="picture_with_text"
+              id="project_bgpic"
+            />
+            <h3 class="project_name">Homework</h3>
+          </a>
+        </div>
+        <div class="project_container" id="1st_prjct">
+          <a href="https://mxu4321.github.io/counterapp/">
+            <img
+              src="./assets/images/project2.png"
+              alt="picture_with_text"
+              id="project_bgpic"
+            />
+            <h3 class="project_name">My First Project</h3>
+          </a>
+        </div>
+        <div class="project_container" id="grp_prjct">
+          <a href="https://mxu4321.github.io/module1_mini_project/">
+            <img
+              src="./assets/images/project3.png"
+              alt="picture_with_text"
+              id="project_bgpic"
+            />
+            <h3 class="project_name">Group Project</h3>
+          </a>
+        </div>
+        <div class="project_container" id="rcnt_prjct">
+          <a href="https://mxu4321.github.io/module2_mini_project/">
+            <img
+              src="./assets/images/project4.png"
+              alt="picture_with_text"
+              id="project_bgpic"
+            />
+            <h3 class="project_name">My Recent Project</h3>
+          </a>
+        </div>
+      </section>
+      <div class="project_dscrb">
+        <h2>Projects Introduction</h2>
+        <ul class="project_list">
+          <li class="list_item">
+            ◽ My first project is a web page counter app
+          </li>
+          <li>◽ My recent project is a cheatsheet for css snippet</li>
+          <li>◽ My homework is code refactor for a website</li>
+          <li>◽ My group project is a website with form</li>
+        </ul>
+      </div>
     </main>
 
     <!-- contact information -->
     <footer class="footer">
-        <section class="contact" id="part3">
-            <div>
-                <a id="email" href="mailto:mxu4321@gmai.com">📧 Email Me 📧</a>
-            </div>
-            <div>
-                <a id="github" href="https://github.com/mxu4321">💼 My Github 💼</a>
-            </div>
-            <div>
-                <a id="linkedin" href="https://www.linkedin.com/in/mengxuexu/">📄 My LinkedIn 📄</a>
-            </div>    
-        </section>
+      <section class="contact" id="part3">
+        <div>
+          <a id="email" href="mailto:mxu4321@gmai.com">📧 Email Me 📧</a>
+        </div>
+        <div>
+          <a id="github" href="https://github.com/mxu4321">💼 My Github 💼</a>
+        </div>
+        <div>
+          <a id="linkedin" href="https://www.linkedin.com/in/mengxuexu/"
+            >📄 My LinkedIn 📄</a
+          >
+        </div>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
-
