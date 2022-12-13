@@ -97,10 +97,15 @@ a {
 }
 
 /* =====project boxes layout===== */
-.projects {
+/* .projects {
     display: grid;
     grid-template-columns: 19% 29%;
     grid-template-rows: 54% 37%;
+} */
+
+.projects {
+    display: inline-flex;
+    flex-direction: column;
 }
 
 #project_bgpic {
@@ -118,11 +123,16 @@ a {
 }
 
 .project_container {
-    margin-left: 10%;
-    margin-top: 7%;
-    padding: 2.5%;
-    height: 75%;
+    margin-left: 3%;
+    margin-top: 1%;
+    padding: 1%;
+    height: 70%;
     border-radius: var(--border-radius);
+}
+
+#homework {
+    /* make the homework project container bottom align with first project container */
+    margin-top: 4.5%;
 }
 
 
@@ -130,10 +140,10 @@ a {
 
 .project_dscrb {
     display: inline;
-    left: 51%;
-    top: 73%;
+    left: 60%;
+    top: 70%;
     line-height: 300%;
-    font-size: x-large;
+    font-size: large;
 }
 
 
