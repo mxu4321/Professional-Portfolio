@@ -39,5 +39,5 @@ HTML, CSS
 
 ## Deployment
 
-[Click me for the portfolio page](https://mxu4321.github.io/module2challenge/)
+[Click me for the portfolio page](https://mxu4321.github.io/Professional-Portfolio/)
 
